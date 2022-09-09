@@ -1,0 +1,186 @@
+<%- include('./header.ejs')%>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="img/Logo.svg" alt="Logo" height="50">
+           <a class="Logo"aria-current="page" href="/">Art&Goût</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="add-resto">Ajouter mon restautant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <nav class="en-tete">
+       
+            <ul> 
+               <div id="imagePrincipale">
+                    <h1><span>  ~ Bienvenue chez Art&Goût ~ </span></h1>
+                    
+                    <h3>Glissez pour rechercher des restaurants </h3>
+                </div>
+        
+        <div id="premierTrait"></div>
+
+        </nav>
+                    <h2 style=" text-align: center;
+                                font-size: 30px;
+                                font-family:  Baskerville;
+                                font-style: oblique;
+                                background-color: #E3CAA5;
+                                opacity: .9;
+                                margin-left: 25%;
+                                margin-right: 20%;
+                                margin-top: 10%;"
+                    > 
+                    Une sélection de restaurants pour faire le tour du monde des cuisines oriental, italienne, française...</h2>
+
+    <div class="container container-layout">
+
+        <div class="card card-layout">
+            <div class="card-body">
+                <form action="/restos" method="POST">
+                     <div class="mb-3">
+                        <label for="adresse" class="form-label">Quoi ?</label>
+                         
+                        <select name="cuisine" class="form-select" id="searchContent">
+
+                            <option disabled selected>Quel type de cuisine cherchez-vous</option>
+                            <option value="Tout">Tout</option>
+                            <option value="Italienne">Italienne</option>
+                            <option value="Japonaise">Japonaise</option>
+                            <option value="Chinoise">Chinoise</option>
+                            <option value="Portugaise">Portugaise</option>
+                            <option value="Turque">Turque</option>
+                            <option value="Indienne">Indienne</option>
+                            <option value="Mexicainne">Mexicainne</option>
+                            <option value="Francaise">Francaise</option>
+                            <option value="Libanaise">Libanaise</option>
+                            <option value="Algerienne">Algerienne</option>
+                             <option value="Thai">Thai</option>
+                            <option value="Fruit de mer Poisson">Fruit De Mer Poisson</option>
+                            <option value="Vegan">Vegan</option>
+                            <option value="Bresilienne">Bresilienne</option>
+                            <option value="Africaine">Africaine</option>
+                            <option value="Pakistannaise">Pakistanaise</option>
+                            <option value="Afghan">Afghan</option>
+                            <option value="Gastronomique">Gastronomique</option>
+                            <option value="Marocaine">Marocaine</option>
+                            <option value="Tunisenne">Tunisienne</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="adresse" class="form-label">Où ?</label>
+                         
+                        <select name="ville" class="form-select" id="searchContent">
+
+                            <option disabled selected>Sélectionnez une ville</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Lyon">Lyon</option>
+                            <option value="Marseille">Marseille</option>
+                            <option value="Versailles">Versailles</option>
+                            <option value="Boulogne-Billancourt">Boulogne-Billancourt</option>
+                            <option value="Cannes">Cannes</option>
+                            <option value="Nice">Nice</option>
+                            <option value="Toulouse">Toulouse</option>
+                            <option value="Montreuil">Montreuil</option>
+                            <option value="Beausoleil">Beausoleil</option>
+                             <option value="Clichy">Clichy</option>
+                            <option value="Bagnolet">Bagnolet</option>
+                            <option value="Aix en Provence">Aix en Provence</option>
+                            <option value="Rouen">Rouen</option>
+                          </select>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit">RECHERCHE</button>
+                     
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" id="specialites">
+                
+                <h2>Tant de saveurs à découvrir...</h2>
+
+                <div class="container">
+                    <div class="row elements">
+                        <div class="col-sm-12">
+                            <img src="img/italien.jpg" alt="restautant italien">
+                            <img src="img/italien2.jpg" alt="restautant italien">
+                            <img src="img/italien3.png" alt="restautant italien">
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>Italienne</h3>
+                            <p style="text-align: center;font-family:  'Baskerville',cursive;">Vous adorez dénicher de nouveaux restaurants branchés à Paris !!! </p>
+                            
+                    </div>
+                </div>
+
+<div id="premierTrait"></div>
+
+                <div class="container">
+                    <div class="row elements">
+                        <div class="col-sm-12">
+                            <img src="img/turque.jpg" alt="restautant oriental">
+                            <img src="img/orientaux2.jpg" alt="restautant oriental">
+                            <img src="img/oriental1.jpg" alt="restautant oriental">
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>Oriental</h3>
+                            <p style="text-align: center;font-family:  'Baskerville',cursive;">
+                              Mais vous adorez aussi déjeuner et savourer un bon brunch entre amis à Lyon ou un dîner romantique à Versailles ?</p>
+                             
+                    </div>
+                </div>
+
+<div id="premierTrait"></div>
+
+                <div class="container">
+                    <div class="row elements">
+                        <div class="col-lg-12">
+                            <img src="img/asian.jpg" alt="restautant asiatique">
+                            <img src="img/asian1.jpg" alt="restautant asiatique">
+                            <img src="img/asian2.jpg" alt="restautant asiatique">
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>Asiatique</h3>
+                            <p style="text-align: center;font-family:  'Baskerville',cursive;">
+                            Vous pensez que rien ne vaut un bon restaurant italien, mais vous souhaitez vous évader dans un restaurant japonais ou indien ? Alors venez choisir les meilleures tables parmi plus de 200 adresses en France sur A&G.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container1">
+                     <h3>  Vous êtes propriétaire d'un restaurant ? <br> Boostez votre restaurant et rendez le visible par vos futurs clients !  </h3>
+
+                     <div class="button1">
+                        <a class="btn btn-success" aria-current="page" href="add-resto">Inscrire mon restaurant sur Art&Goût</a>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+    
+
+</body>
+
+</html>

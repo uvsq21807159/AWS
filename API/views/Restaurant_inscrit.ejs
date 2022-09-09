@@ -1,0 +1,65 @@
+<%- include('./hed.ejs')%>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="img/Logo.svg" alt="Logo" height="50">
+           <a class="Logo"aria-current="page" href="/">Art&Goût</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<div class="overlay">
+<form>
+   <div class="con">
+    <img src="img/Logo.svg" alt="Logo" style="padding-left:150px ;"height="80";>
+
+   <header class="head-form" >
+      <h2> Inscription réussie ! </h2>
+
+      <p> Votre restaurant à bien été enregistré voici les details de votre inscription </p> 
+     
+   </header>
+   <!--     End  header Content  -->
+   <br>
+   <div class="field-set" >
+     
+        <div class="recap">
+            <p >
+            <strong>Nom du restaurant : </strong><%= nom %>
+            <br><strong> Spécialité : </strong><%= cuisine %>
+            <br><strong> Adresse : </strong><%= adresse %>
+            <br><strong> Ville : </strong><%= ville %>
+            <br><strong> Nombre de places : </strong></strong><%= places %>
+            <br><strong> Numéro de téléphone: </strong><%= telephone %></p>    
+      </div>
+
+   </div>
+  
+   </div>
+
+  </div>
+    
+  <!-- End Form -->
+  <header>
+        <div class="fin-formualire" align="center">
+        <a type="submit" href="/">  À bientôt !  </a>
+    
+        </div>
+</header
+
+</form>
+</div>
+
+
+</body>
+</html>

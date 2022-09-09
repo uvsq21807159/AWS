@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth; /*scroller de facon fluide d'un point a a un point b  */
+}
+
+
+.nav-item li {
+    list-style: none;
+
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
+/* bouton redirection */
+.nav-item {
+
+    display: block;
+    list-style: none;
+    text-align: right;
+    line-height: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-bottom: 6px;
+    font-size: 20px;
+    font-family: times;
+    font-style: inherit;
+    font-variant-caps: all-petite-caps;
+
+}
+
+/*Logo*/
+div .Logo{
+
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-family: Cambria;
+    font-style: oblique;
+
+}
+
+
+/* Titre Art&Gout */
+
+
+.en-tete h1{
+    text-align: center;
+    margin-top: 220px;
+    margin-bottom: 50px;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: 40px;
+    font-family:  Baskerville;
+    font-style: oblique;
+
+}
+header {
+  background-color: #B7CADB;
+  background-size: cover;
+}
+
+
+/* Reservation style */
+.reservation-container{
+    padding-right: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/reservation.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.reservation-form{
+
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    background-color: white;
+    margin-left: 40%;
+    background-size: cover;
+}
+
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.reservation-form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #bcc0c4;
+    transition: border-bottom-color 0.5s ease-in-out;
+    margin: 10px;
+    padding: 2px;
+}
+.reservation-form input:focus{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #6c5549;
+}
+.submit-button input, .submit-button input:active, .submit-button input:focus{
+    background-color: #6c5549;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+   -webkit-transition: opacity 0.3s ease-in-out;
+   -moz-transition: opacity 0.3s ease-in-out;
+   width: 120px;
+   border-radius: 30px;
+}
+.submit-button input:hover{
+    opacity: 0.9;
+}
+
+form .corps-du-formulaire .Partiedroite{
+    margin-left: 10px;
+
+}
+
+
+form .corps-du-formulaire label{
+
+    font-family: times;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+form .corps-du-formulaire{
+
+    display: flex;
+
+}
+
+form .corps-du-formulaire .form-row{
+
+    flex-direction: column;
+    margin-left: 70px;
+}
+.reservation-form-header{
+    color: #b49383;
+    font-family: 'Dancing Script', cursive; 
+    font-size: 32px;
+}
+.reservation-form-header::before, .reservation-form-header::after{
+    content: "~";
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
+.success{
+    color: green;
+    text-align: center;
+    display: none;
+}

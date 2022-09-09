@@ -1,0 +1,83 @@
+<%- include('./header2.ejs')%>
+<body>
+    
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="img/Logo.svg" alt="Logo" height="50">
+           <a class="Logo"aria-current="page" href="/">Art&Goût</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="add-resto">Ajouter mon restautant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="reservation-container">
+       
+        <form class="reservation-form" action="/reservations?id=<%=data%>&nom=<%=nom_resto%>" method="POST">
+            <div class="form-row header-row">
+                <span class="reservation-form-header">Effectuez votre reservation</span>
+            </div>
+            <div class="corps-du-formulaire" >
+
+    <div class="Partiegauche">
+            
+            
+            <div class="form-row">
+                <label><strong>Nom :</strong></label>
+                <input id="Nom_client" type="text" name="Nom_client" placeholder="Votre nom*">
+                
+            </div>
+
+            <div class="form-row">
+                <label><strong>Prénom :</strong></label>
+                
+                <input id="Prenom_client" type="text" name="Prenom_client" placeholder="Votre prénom*">
+            </div>
+
+            <div class="form-row">
+                <label><strong>Numéro de téléphone :</strong></label>
+                <input id="Num_tel_client" type="tel" name="Num_tel_client" placeholder="Votre numéro de téléphone*">
+                
+            </div>
+     </div>
+    <div class="Partiedroite">
+            <div class="form-row">
+                <label><strong>Adresse mail :</strong> </label>
+                
+                <input id="email" type="email" name="Mail_client" placeholder="Votre adresse mail*">
+            </div>
+
+            <div class="form-row">
+                <label><strong>Nombre de convives :  </strong></label>
+                <input id="Nombre_de_personnes" type="number" name="Nombre_de_personnes" placeholder="Nombre de personnes*">
+            
+            </div>
+
+             <div class="form-row">
+                <label> <strong>Date de reservation : </strong></label>
+        
+                <input id="date" type="date" name="date" placeholder="DD-MM-YYYYY*">
+                
+            </div>
+    </div>
+           </div>
+            <div class="form-row submit-button">
+                <input type="submit" value="Réserver">
+            </div>
+
+        </form>
+    </div>
+    
+
+</body>
+</html>
